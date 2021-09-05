@@ -1,0 +1,15 @@
+.btn {
+  height: 70px;
+  width: 196px;
+  background-color: #fc3955;
+  border: none;
+  border-radius: 35px;
+  color: white;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 25px;
+}

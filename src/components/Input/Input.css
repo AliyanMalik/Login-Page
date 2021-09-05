@@ -1,0 +1,72 @@
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  margin-right: 40px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  border-bottom: 0.1px solid lightgray;
+}
+
+.logoWrapper {
+  flex: 0.1;
+  border-bottom: none;
+}
+
+.email-input img {
+  width: 30px;
+  height: 30px;
+}
+input {
+  flex: 0.9;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 0.1px solid lightgray;
+  font-size: 25px;
+  font-family: "proxima-nova", sans-serif;
+  color: #59617b;
+}
+.email-input input {
+  height: 30px;
+  font-size: 25px;
+  font-family: "proxima-nova", sans-serif;
+  color: #59617b;
+}
+.email-input input:focus {
+  outline: none !important;
+  font-size: 25px;
+}
+.password-input {
+  width: 73%;
+  display: flex;
+  padding-top: 5px;
+}
+.password-logo {
+  flex: 10%;
+}
+.password-input img {
+  padding-top: 7px;
+}
+.password-input input {
+  height: 30px;
+  width: 100%;
+  flex: 90%;
+  font-size: 25px;
+  font-family: "proxima-nova", sans-serif;
+}
+.password-input input:focus {
+  outline: none !important;
+  font-size: 25px;
+}
+::-webkit-input-placeholder {
+  color: #59617b;
+  font-family: "Lucida-Grande", sans-serif;
+  font-size: 22px;
+}
+input[type="password"].password::-webkit-input-placeholder {
+  color: #b9b8b8;
+  font-family: "Lucida-Grande", sans-serif;
+  font-size: 22px;
+}
