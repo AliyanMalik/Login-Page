@@ -3,12 +3,12 @@ import Login from "./components/Login/Login";
 
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <Fragment>
       <Login></Login>
     </Fragment>
   );
-}
+};
 
 export default App;
