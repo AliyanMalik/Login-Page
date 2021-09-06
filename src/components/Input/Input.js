@@ -11,6 +11,9 @@ const Input = (props) => {
         type={props.type}
         placeholder={props.placeholder}
         className={props.className}
+        style={{
+          "--placeholder-color": props.color,
+        }}
       />
     </div>
   );

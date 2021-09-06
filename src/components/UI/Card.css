@@ -18,3 +18,39 @@
   background-color: white;
   box-sizing: border-box;
 }
+
+/* Mobile Responsive */
+
+@media (max-width: 900px) {
+  .card {
+    border-radius: 22px;
+    box-shadow: 0 27px 34px #9aa7bd;
+    min-height: 500px;
+    width: 480px;
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    border-radius: 22px;
+    box-shadow: 0 27px 34px #9aa7bd;
+    min-height: 400px;
+    width: 380px;
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 400px) {
+  .card {
+    border-radius: 22px;
+    box-shadow: 0 27px 34px #9aa7bd;
+    font-size: 15px;
+    height: 360px;
+    width: 280px;
+    background-color: white;
+    box-sizing: border-box;
+  }
+}

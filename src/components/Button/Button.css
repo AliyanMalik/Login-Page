@@ -13,3 +13,37 @@
   cursor: pointer;
   margin-right: 25px;
 }
+@media (max-width: 600px) {
+  .btn {
+    height: 70px;
+    width: 170px;
+    background-color: #fc3955;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+  }
+}
+@media (max-width: 400px) {
+  .btn {
+    height: 50px;
+    width: 100%;
+    background-color: #fc3955;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+  }
+}

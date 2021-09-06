@@ -60,13 +60,90 @@ input {
   outline: none !important;
   font-size: 25px;
 }
-::-webkit-input-placeholder {
+/* ::-webkit-input-placeholder {
   color: #59617b;
   font-family: "Lucida-Grande", sans-serif;
   font-size: 22px;
-}
+} */
 input[type="password"].password::-webkit-input-placeholder {
   color: #b9b8b8;
   font-family: "Lucida-Grande", sans-serif;
   font-size: 22px;
+}
+::-webkit-input-placeholder {
+  color: var(--placeholder-color);
+}
+
+/* RESPONSIVE  */
+
+@media (max-width: 600px) {
+  .inputWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    margin-right: 40px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    border-bottom: 0.1px solid lightgray;
+  }
+
+  input {
+    flex: 70%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 0.1px solid lightgray;
+    font-size: 22px;
+    font-family: "proxima-nova", sans-serif;
+    color: #59617b;
+    margin-left: 25px;
+  }
+  .email-input input {
+    height: 30px;
+    font-size: 25px;
+    font-family: "proxima-nova", sans-serif;
+    color: #59617b;
+  }
+}
+@media (max-width: 400px) {
+  .inputWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    margin-right: 40px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    border-bottom: 0.1px solid lightgray;
+  }
+
+  input {
+    flex: 70%;
+    height: 100%;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 0.1px solid lightgray;
+    font-size: 20px;
+    font-family: "proxima-nova", sans-serif;
+    color: #59617b;
+    margin-left: 25px;
+  }
+  .email-input input {
+    height: 30px;
+    font-size: 25px;
+    font-family: "proxima-nova", sans-serif;
+    color: #59617b;
+  }
+  /* ::-webkit-input-placeholder {
+    color: #59617b;
+    font-family: "Lucida-Grande", sans-serif;
+    font-size: 22px;
+  } */
+  input[type="password"].password::-webkit-input-placeholder {
+    color: #b9b8b8;
+    font-family: "Lucida-Grande", sans-serif;
+    font-size: 20px;
+  }
 }

@@ -1,10 +1,11 @@
 import { React } from "react";
-import Card from "../UI/Card";
-import Input from "../Input/Input";
-import Logo from "../../assets/logo.svg";
-import Email from "../../assets/email.svg";
-import Password from "../../assets/password.svg";
-import Button from "../Button/Button";
+import Card from "../../UI/Card";
+import Input from "../../Input/Input";
+import Logo from "../../../assets/logo.svg";
+import Email from "../../../assets/email.svg";
+import Password from "../../../assets/password.svg";
+import Button from "../../Button/Button";
+import { Link } from "react-router-dom";
 
 import "./Login.css";
 
@@ -12,7 +13,7 @@ const Login = (props) => {
   return (
     <Card>
       <div className="logoWrapper">
-        <img src={Logo} alt="logo" width="65px" />
+        <img src={Logo} alt="logo" className="logo" width="65px" />
       </div>
       <div className="titleWrapper">
         <p className="title">Welcome home, Andy.</p>
@@ -34,9 +35,11 @@ const Login = (props) => {
       <div className="btnWrapper">
         <p>
           Or{" "}
-          <span style={{ color: "#fc3955", fontSize: 18, cursor: "pointer" }}>
-            Log in
-          </span>{" "}
+          <Link to="/signup" style={{ textDecoration: "none" }}>
+            <span style={{ color: "#fc3955", fontSize: 18, cursor: "pointer" }}>
+              Sign up
+            </span>{" "}
+          </Link>
           to continue.{" "}
         </p>
         <Button title="SIGN IN" />
